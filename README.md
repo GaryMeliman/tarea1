@@ -8,7 +8,7 @@ Tarea numero uno
 
 #### Cambiar extención
 En el root del proyecto hay un archivo .env.example el cual se debe cambiar a .env.
-Dentro de archivo .en se debe cambiar la configuración de la base de datos si se requiere.
+Dentro de archivo .env se debe cambiar la configuración de la base de datos si se requiere.
 
 ```yaml
 DB_NAME=ehqGCIGLvY // Nombre de la base de datos
