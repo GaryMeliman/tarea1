@@ -1,0 +1,54 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: tarea1
+  description: Tarea numero uno
+basePath: /api/v1
+tags:
+  - name: Examples
+    description: Simple example endpoints
+  - name: Specification
+    description: The swagger API specification
+
+consumes:
+  - application/json
+produces:
+  - application/json
+
+definitions:
+  ExampleBody:
+    type: object
+    title: example
+    required:
+      - name
+    properties:
+      idExample:
+        type: number
+        example: 1
+      name:
+        type: string
+        example: no_stress
+      createdAt:
+        type: string
+        format: date-time
+        example: "2020-08-30T17:03:45.000Z"
+      updatedAt:
+        type: string
+        format: date-time
+        example: "2020-08-30T17:03:45.000Z"
+paths:
+  /examples:
+    get:
+      tags:
+        - Examples
+      description: Fetch all examples
+      responses:
+        200:
+          description: Returns all examples
+  /spec:
+    get:
+      tags:
+        - Specification
+      responses:
+        200:
+          description: Return the API specification
